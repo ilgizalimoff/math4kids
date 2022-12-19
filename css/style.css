@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Luckiest Guy', cursive;
+    background-color: rgb(214, 208, 208);
+}
+
+header {
+    background-color: rgb(255, 81, 0);
+    color: white;
+}
+h1{
+    color: #fff;
+  font-size: 30px;
+
+}
+li {
+    list-style: none;
+}
+
+.header-container {
+    width: 80%;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-block {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.material-symbols-outlined {
+    font-size: 42px;
+}
+
+.operations {
+    display: flex;
+    justify-content: space-between;
+}
+
+.operations li {
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.check-border {
+    border-bottom: 5px solid white;
+}
+
+.primer-block {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 140px;
+}
+
+.primer-block p {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.primer-question {
+    background-color: white;
+    width: 80%;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 0px rgb(0 0 0 / 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primer-question :nth-child(1) {
+    color: rgb(255, 81, 0);
+}
+
+.primer-question :nth-child(2) {
+    color: rgb(11, 247, 255);
+}
+
+.primer-question :nth-child(3) {
+    color: rgb(208, 255, 0);
+}
+
+.primer-question :nth-child(4) {
+    color: orange;
+}
+
+.primer-question :nth-child(5) {
+    color: gray;
+}
+
+.primer-answers {
+    width: 20%;
+}
+
+.primer-answers li {
+    height: 180px;
+    font-size: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 0px rgb(0 0 0 / 90%);
+    font-size: 140px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primer-answers :nth-child(1) {
+    background-color: rgb(255, 81, 0);
+}
+
+.primer-answers :nth-child(2) {
+    background-color: rgb(11, 247, 255);
+}
+
+.primer-answers :nth-child(3) {
+    background-color: rgb(208, 255, 0);
+}
+
+.rigtAnswers{
+    font-size: 42px;
+    box-shadow: 2px 2px 6px 0px rgb(0 0 0 / 90%);
+    color: #fff;
+    padding: 0 15px;
+}
