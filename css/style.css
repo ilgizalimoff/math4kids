@@ -12,11 +12,12 @@ header {
     background-color: rgb(255, 81, 0);
     color: white;
 }
-h1{
-    color: #fff;
-  font-size: 30px;
 
+h1 {
+    color: #fff;
+    font-size: 30px;
 }
+
 li {
     list-style: none;
 }
@@ -128,9 +129,110 @@ li {
     background-color: rgb(208, 255, 0);
 }
 
-.rigtAnswers{
+.rigtAnswers {
     font-size: 42px;
     box-shadow: 2px 2px 6px 0px rgb(0 0 0 / 90%);
     color: #fff;
     padding: 0 15px;
+}
+
+@media (max-width:1000px) {
+    .primer-question {
+        width: 75%;
+    }
+
+    .primer-answers {
+        width: 25%;
+    }
+}
+
+@media (max-width: 850px) {
+    .primer-block p {
+        display: inline-block;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 700px) {
+    .primer-block p {
+        margin: 0 5px;
+    }
+
+    .primer-block {
+        font-size: 110px;
+    }
+
+    .primer-answers li {
+        font-size: 110px;
+    }
+
+}
+
+@media (max-width: 670px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        height: 88px;
+    }
+
+    .icon-block {
+        margin-top: 10px;
+    }
+
+    .operations {
+        margin-bottom: 10px;
+    }
+
+    .primer-answers li {
+        height: 137px;
+    }
+
+    .primer-block {
+        font-size: 90px;
+    }
+
+    .primer-answers li {
+        font-size: 90px;
+    }
+
+    .rigtAnswers {
+        font-size: 32px;
+    }
+    .primer-block{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .primer-question{
+        margin: 1px;
+    }
+    .primer-answers li {
+        height: 80px;
+    }
+    .primer-block {
+        font-size: 55px;
+    }
+
+    .primer-answers li {
+        font-size: 55px;
+    }
+
+    .rigtAnswers {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .operations li{
+        font-size: 14px;
+    }
+    .primer-answers li{
+        margin: 2px;
+    }
+    .rigtAnswers {
+        margin-top: 10px;
+        font-size: 14px;
+    }
 }
