@@ -47,9 +47,10 @@ function createPrimer(operation) {
             setAnswers()
 
             function setAnswers() {
-                let answersArray = [createNumber(), createNumber()]
                 let setIndex = Math.floor(Math.random() * (3 - 0) + 0)
-                let setValues = Math.floor(eval(num1 + operationsObj[element] + num2))
+                let setValues = eval(num1 + operationsObj[element] + num2)
+                let answersArray = [createNumber(), createNumber()]
+                !Number.isInteger(setValues) ? setValues = setValues.toFixed(1) : setValues = setValues
                 answersArray.splice(setIndex, 0, setValues)
                 let itogOtvety = `<li>${answersArray[0]}</li>
                                 <li>${answersArray[1]}</li>
@@ -61,8 +62,8 @@ function createPrimer(operation) {
     })
 }
 
-function createNumber() {
-    return Math.floor(Math.random() * 10)
+function createNumber(max = 10, min = 0) {
+    return Math.floor(Math.random() * (max - min) + min)
 }
 
 function switchPrimer(setValues) {

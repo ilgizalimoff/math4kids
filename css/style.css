@@ -110,7 +110,7 @@ li {
     margin: 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 6px 0px rgb(0 0 0 / 90%);
-    font-size: 140px;
+    font-size: 120px;
     color: white;
     display: flex;
     align-items: center;
@@ -151,6 +151,10 @@ li {
         display: inline-block;
         margin: 0 5px;
     }
+
+    .primer-answers li {
+        font-size: 90px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -159,10 +163,6 @@ li {
     }
 
     .primer-block {
-        font-size: 110px;
-    }
-
-    .primer-answers li {
         font-size: 110px;
     }
 
@@ -185,54 +185,64 @@ li {
 
     .primer-answers li {
         height: 137px;
+        font-size: 80px;
     }
 
     .primer-block {
-        font-size: 90px;
-    }
+        font-size: 80px;
+        width: 100%;
 
-    .primer-answers li {
-        font-size: 90px;
     }
 
     .rigtAnswers {
         font-size: 32px;
     }
-    .primer-block{
+
+    .primer-block {
         width: 100%;
     }
 }
 
-@media (max-width: 450px) {
-    .primer-question{
-        margin: 1px;
-    }
+@media (max-width: 550px) {
     .primer-answers li {
-        height: 80px;
-    }
-    .primer-block {
-        font-size: 55px;
+        margin: 2px;
+        font-size: 60px;
     }
 
-    .primer-answers li {
-        font-size: 55px;
+    .primer-question {
+        width: 67%;
     }
 
-    .rigtAnswers {
-        margin-top: 20px;
-        font-size: 20px;
+    .primer-answers {
+        width: 33%;
+
     }
 }
 
 @media (max-width: 450px) {
-    .operations li{
-        font-size: 14px;
+    .primer-question {
+        margin: 1px;
     }
-    .primer-answers li{
-        margin: 2px;
+
+    .primer-answers li {
+        height: 80px;
     }
+
+    .primer-block {
+        font-size: 55px;
+        margin-top: 80px;
+    }
+
     .rigtAnswers {
-        margin-top: 10px;
+        margin-top: 20px;
         font-size: 14px;
+    }
+
+    .operations li {
+        font-size: 14px;
+    }
+
+    .primer-answers li {
+        margin: 2px;
     }
 }
